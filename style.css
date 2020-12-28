@@ -1,0 +1,50 @@
+body {
+  background-color: #DDDDDD;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+#main {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#title {
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  padding: 20px 0 5px 0px;
+}
+
+#tribute-info {
+  margin: 40px;
+}
+
+.list-primary {
+  font-weight: 800;
+  margin: 25px;
+}
+
+.list-primary::marker {
+  font-size: 1.2em;
+}
+
+.list-secondary {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.list-secondary::marker {
+  color: red;
+}
+
+h3 {
+  padding: 20px 0 20px;
+}
