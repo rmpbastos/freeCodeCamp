@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+  <div class="container">
+    <h1 id="title" class="text-center">Course Survey</h1>
+    <p id="description" class="text-center">Please submit the following form to help us improve our service</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="age" id="number" class="form-control" placeholder="Age" min="15" max="115">
+      </div>
+      <div class="form-group">
+        <p>What is your level of education?</p>
+        <select id="dropdown" name="education" class="form-control" required>
+          <option disabled selected value>Select</option>
+          <option value="none">None</option>
+          <option value="high-school">High School</option>
+          <option value="diploma">Diploma or Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          <option value="phd">PhD</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What is your main occupation?</p>
+        <label>
+          <input name="occupation" value="student" type="radio" class="input-radio">Student
+        </label>
+        <label>
+          <input name="occupation" value="part-time" type="radio" class="input-radio">Part Time Job
+        </label>
+        <label>
+          <input name="occupation" value="full-time" type="radio" class="input-radio">Full Time Job
+        </label>
+        <label>
+          <input name="occupation" value="entrepreneur" type="radio" class="input-radio">Entrepreneur
+        </label>
+        <label>
+          <input name="occupation" value="other" type="radio" class="input-radio">Other
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Which courses are you interested in?
+        <span>(Check all that apply)</span>
+        </p>
+        <label>
+          <input name="prefer" value="html" type="checkbox" class="input-checkbox">HTML + CSS
+        </label>
+        <label>
+          <input name="prefer" value="js" type="checkbox" class="input-checkbox">HTML + CSS + Javascript
+        </label>
+        <label>
+          <input name="prefer" value="js-adv" type="checkbox" class="input-checkbox">Advanced Javascript
+        </label>
+        <label>
+          <input name="prefer" value="python" type="checkbox" class="input-checkbox">Introduction to Python
+        </label>
+        <label>
+          <input name="prefer" value="data" type="checkbox" class="input-checkbox">Python for Data Analysis
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Please add any comments or suggestions</p>
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comments or suggestions here"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
