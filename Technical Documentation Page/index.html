@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></link>
+
+<nav id="navbar">
+  <header>
+    <div class="grid">
+      <div class="icon">
+        <i class="fab fa-python fa-2x"></i>
+      </div>
+      <div class="desc">
+        <p>Python Documentation</p>
+      </div>
+    </div>
+  </header>
+  <ul>
+    <li>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Design_Philosophy_and_Features">Design Philosophy and Features</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Syntax_and_Semantics">Syntax and Semantics</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Programming_Examples">Programming Examples</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Libraries">Libraries</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects</p>
+      <p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.</p>
+      <p>Python was created in the late 1980s, and first released in 1991, by Guido van Rossum as a successor to the ABC programming language. Python 2.0, released in 2000, introduced new features, such as list comprehensions, and a garbage collection system with reference counting, and was discontinued with version 2.7 in 2020. Python 3.0, released in 2008, was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3. With Python 2's end-of-life, only Python 3.6.x and later are supported, with older versions still supporting e.g. Windows 7 (and old installers not restricted to 64-bit Windows).</p>
+    </article>
+  </section>
+  <section class="main-section" id="Design_Philosophy_and_Features">
+    <header>Design Philosophy and Features</header>
+    <article>
+      <p>Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of its features support functional programming and aspect-oriented programming (including by metaprogramming and metaobjects (magic methods)). Many other paradigms are supported via extensions, including design by contract and logic programming.</p>
+      <p>The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:</p>
+      <ul>
+        <li>Beautiful is better than ugly.</li>
+        <li>Explicit is better than implicit.</li>
+        <li>Simple is better than complex.</li>
+        <li>Complex is better than complicated.</li>
+        <li>Readability counts.</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Syntax_and_Semantics">
+    <header>Syntax and Semantics</header>
+    <article>
+      <p>Python is meant to be an easily readable language. Its formatting is visually uncluttered, and it often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are optional. It has fewer syntactic exceptions and special cases than C or Pascal.</p>
+      <h2>Indentation</h2>
+      <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block. Thus, the program's visual structure accurately represents the program's semantic structure. This feature is sometimes termed the off-side rule, which some other languages share, but in most languages indentation doesn't have any semantic meaning.</p>
+      <h2>Statements and control flow</h2>
+      <p>Python's statements include (among others):</p>
+      <ul>
+        <li>The assignment statement (token '=', the equals sign).</li>
+        <li>The <code>if</code> statement, which conditionally executes a block of code, along with <code>else</code> and <code>elif</code> (a contraction of else-if).</li>
+        <li>The <code>for</code> statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block.</li>
+        <li>The <code>while</code> statement, which executes a block of code as long as its condition is true.</li>
+        <li>The <code>try</code> statement, which allows exceptions raised in its attached code block to be caught and handled by <code>except</code> clauses; it also ensures that clean-up code in a <code>finally</code> block will always be run regardless of how the block exits.</li>
+      </ul>
+      <h2>Expressions</h2>
+      <p>Some Python expressions are similar to languages such as C and Java, while some are not:</p>
+      <ul>
+        <li>Addition, subtraction, and multiplication are the same, but the behavior of division differs. There are two types of divisions in Python. They are floor division (or integer division) <code>//</code> and floating point <code>/</code> division. Python also added the <code>**</code> operator for exponentiation.</li>
+        <li>From Python 3.5, the new <code>@</code> infix operator was introduced. It is intended to be used by libraries such as NumPy for matrix multiplication.</li>
+        <li>From Python 3.8, the syntax <code>:=</code>, called the 'walrus operator' was introduced. It assigns values to variables as part of a larger expression</li>
+        <li>In Python, <code>==</code> compares by value, versus Java, which compares numerics by value and objects by reference. (Value comparisons in Java on objects can be performed with the <code>equals()</code> method.) Python's <code>is</code> operator may be used to compare object identities (comparison by reference). In Python, comparisons may be chained, for example <code>a &lt= b &lt= c</code>.</li>
+        <li>Python uses the words <code>and</code>, <code>or</code>, <code>not</code> for its boolean operators rather than the symbolic <code>&&</code>, <code>||</code>, <code>!</code> used in Java and C.</li>
+      </ul>
+      <h2>Methods</h2>
+      <p>Methods on objects are functions attached to the object's class; the syntax <code>instance.method(argument)</code> is, for normal methods and functions, syntactic sugar for <code>Class.method(instance, argument)</code>. Python methods have an explicit <code>self</code> parameter to access instance data, in contrast to the implicit <code>self</code> (or <code>this</code>) in some other object-oriented programming languages (e.g., C++, Java, Objective-C, or Ruby).</p>
+    </article>
+  </section>
+  <section class="main-section" id="Programming_Examples">
+    <header>Programming Examples</header>
+    <article>
+      <p>Hello world program:</p>
+      <code class="prog-examples">
+        <span class="green">print</span>(<span class="red">'Hello, world!'</span>)
+      </code>
+      <p>Program to calculate the factorial of a positive integer:</p>
+      <code class="prog-examples">
+        n = <span class="green">int</span>(<span class="green">input</span>(<span class="red">'Type a number, and its factorial will be printed: '</span>))
+        <br>
+        <br>
+        <span class="green-b">if</span> n &lt 0:
+        <br>
+        <span class="green-b-tab">raise</span> <span class="red">ValueError</span>(<span class="red">'You must enter a non negative integer'</span>)
+        <br>
+        <br>
+        fact = 1
+        <br>
+        <br>
+        <span class="green-b">for</span> i <span class="purple-b">in</span> <span class="green">range</span>(2, n + 1):
+        <br>
+        <span class="tab">fact</span> *= i
+        <br>
+        <br>
+        <span class="green">print</span>(fact)
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Libraries">
+    <header>Libraries</header>
+    <article>
+      <p>Python's large standard library, commonly cited as one of its greatest strengths, provides tools suited to many tasks. For Internet-facing applications, many standard formats and protocols such as MIME and HTTP are supported. It includes modules for creating graphical user interfaces, connecting to relational databases, generating pseudorandom numbers, arithmetic with arbitrary-precision decimals, manipulating regular expressions, and unit testing.</p>
+      <p>Some parts of the standard library are covered by specifications (for example, the Web Server Gateway Interface (WSGI) implementation wsgiref follows PEP 333), but most modules are not. They are specified by their code, internal documentation, and test suites. However, because most of the standard library is cross-platform Python code, only a few modules need altering or rewriting for variant implementations.</p>
+      <p>As of November 2019, the Python Package Index (PyPI), the official repository for third-party Python software, contains over 200,000 packages with a wide range of functionality, including:</p>
+      <ul>
+        <li>Automation</li>
+        <li>Data analytics</li>
+        <li>Databases</li>
+        <li>Documentation</li>
+        <li>Graphical user interfaces</li>
+        <li>Image processing</li>
+        <li>Machine learning</li>
+        <li>Mobile App</li>
+        <li>Multimedia</li>
+        <li>Computer Networking</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <p>All information extracted from <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">wikipedia</a>.</p>
+    </article>
+  </sectio>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
